@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF511FCB25E01F1400B5F451 /* GoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF511FCA25E01F1400B5F451 /* GoodsDetailViewController.swift */; };
 		AF8FD28625DEC005002B0B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FD28525DEC005002B0B19 /* AppDelegate.swift */; };
 		AF8FD28825DEC005002B0B19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FD28725DEC005002B0B19 /* SceneDelegate.swift */; };
 		AF8FD28F25DEC005002B0B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8FD28E25DEC005002B0B19 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		02DA1FCFA9A9B6AEC7D5DE45 /* Pods_JdApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JdApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D79CC54E8F6E7C3B495EA7 /* Pods-JdApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JdApp.release.xcconfig"; path = "Target Support Files/Pods-JdApp/Pods-JdApp.release.xcconfig"; sourceTree = "<group>"; };
 		56E416B6340FA3678E35CCAB /* Pods-JdApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JdApp.debug.xcconfig"; path = "Target Support Files/Pods-JdApp/Pods-JdApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AF511FCA25E01F1400B5F451 /* GoodsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsDetailViewController.swift; sourceTree = "<group>"; };
 		AF8FD28225DEC005002B0B19 /* JdApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JdApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8FD28525DEC005002B0B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF8FD28725DEC005002B0B19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF511FC925E01EC100B5F451 /* ModuleGoods */ = {
+			isa = PBXGroup;
+			children = (
+				AF511FCA25E01F1400B5F451 /* GoodsDetailViewController.swift */,
+			);
+			path = ModuleGoods;
+			sourceTree = "<group>";
+		};
 		AF8FD27925DEC005002B0B19 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		AF8FD2D425DECAAD002B0B19 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AF511FC925E01EC100B5F451 /* ModuleGoods */,
 				AF8FD2D925DECAEF002B0B19 /* ModuleHome */,
 				AF8FD2D825DECAE9002B0B19 /* ModuleCategory */,
 				AF8FD2D725DECAE0002B0B19 /* ModuleFound */,
@@ -273,6 +284,7 @@
 				AF8FD2EE25DECBFB002B0B19 /* BaseViewController.swift in Sources */,
 				AF8FD2E225DECB5E002B0B19 /* FoundViewController.swift in Sources */,
 				AF8FD2E825DECB73002B0B19 /* CategoryViewController.swift in Sources */,
+				AF511FCB25E01F1400B5F451 /* GoodsDetailViewController.swift in Sources */,
 				AF8FD2DF25DECB4A002B0B19 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

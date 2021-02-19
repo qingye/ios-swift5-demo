@@ -15,22 +15,28 @@ class MainTabBarViewController: UITabBarController {
     }
     
     func initTabBar() {
-        let home = HomeViewController()
-        home.tabBarItem.title = "首页"
+//        let home = HomeViewController()
+//        home.tabBarItem.title = "首页"
+//
+//        let category = CategoryViewController()
+//        category.tabBarItem.title = "分类"
+//
+//        let found = FoundViewController()
+//        found.tabBarItem.title = "发现"
+//
+//        let cart = CartViewController()
+//        cart.tabBarItem.title = "购物车"
+//
+//        let mine = MineViewController()
+//        mine.tabBarItem.title = "我的"
         
-        let category = CategoryViewController()
-        category.tabBarItem.title = "分类"
-        
-        let found = FoundViewController()
-        found.tabBarItem.title = "发现"
-        
-        let cart = CartViewController()
-        cart.tabBarItem.title = "购物车"
-        
-        let mine = MineViewController()
-        mine.tabBarItem.title = "我的"
-        
-        self.viewControllers = [home, category, found, cart, mine]
+        self.viewControllers = [
+            self.getTabBarItem(HomeViewController(), "首页"),
+            self.getTabBarItem(CategoryViewController(), "分类"),
+            self.getTabBarItem(FoundViewController(), "发现"),
+            self.getTabBarItem(CartViewController(), "购物车"),
+            self.getTabBarItem(MineViewController(), "我的")
+        ]
 
         // 设置 tabBar & tabBarItem
         self.setTabBarItemAttributes(bgColor: UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 0.75))
@@ -41,6 +47,12 @@ class MainTabBarViewController: UITabBarController {
                 one.badgeValue = "99+"
             }
         }
+    }
+    
+    func getTabBarItem(_ vc: UIViewController, _ title: String) -> UIViewController {
+        let nav = UINavigationController(rootViewController: vc)
+        nav.tabBarItem.title = title
+        return nav
     }
     
     /// 这种方式比较灵活
