@@ -21,5 +21,6 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationItem.backBarButtonItem = UIBarButtonItem.init(title: "返回", style: .done, target: nil, action: nil)
     }
 }
