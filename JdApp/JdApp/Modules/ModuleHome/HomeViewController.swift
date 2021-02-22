@@ -7,23 +7,14 @@
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initView()
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        self.hidesBottomBarWhenPushed = true
-//    }
-//    
-//    override func viewDidDisappear(_ animated: Bool) {
-//        super.viewDidDisappear(animated)
-//        self.hidesBottomBarWhenPushed = false
-//    }
-    
+
     func initView() {
         let label = UILabel(frame: CGRect.zero)
         label.translatesAutoresizingMaskIntoConstraints = false
