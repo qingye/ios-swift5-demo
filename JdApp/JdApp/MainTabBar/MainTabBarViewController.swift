@@ -15,21 +15,6 @@ class MainTabBarViewController: UITabBarController {
     }
     
     func initTabBar() {
-//        let home = HomeViewController()
-//        home.tabBarItem.title = "首页"
-//
-//        let category = CategoryViewController()
-//        category.tabBarItem.title = "分类"
-//
-//        let found = FoundViewController()
-//        found.tabBarItem.title = "发现"
-//
-//        let cart = CartViewController()
-//        cart.tabBarItem.title = "购物车"
-//
-//        let mine = MineViewController()
-//        mine.tabBarItem.title = "我的"
-        
         self.viewControllers = [
             self.getTabBarItem(HomeViewController(), "首页"),
             self.getTabBarItem(CategoryViewController(), "分类"),

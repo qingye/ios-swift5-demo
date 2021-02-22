@@ -14,6 +14,16 @@ class HomeViewController: BaseViewController {
         self.initView()
     }
     
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        self.hidesBottomBarWhenPushed = true
+//    }
+//    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        self.hidesBottomBarWhenPushed = false
+//    }
+    
     func initView() {
         let label = UILabel(frame: CGRect.zero)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,6 +44,5 @@ class HomeViewController: BaseViewController {
     
     @objc func tapLabel() {
         self.navigationController?.pushViewController(GoodsDetailViewController(), animated: true)
-//        self.present(GoodsDetailViewController(), animated: true, completion: nil)
     }
 }
