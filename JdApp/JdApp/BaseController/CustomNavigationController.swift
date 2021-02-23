@@ -21,7 +21,6 @@ class CustomNavigationController: UINavigationController, UINavigationController
     }
     
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        print("vc = \(viewController)")
         if viewController is BaseViewController {
             (viewController as! BaseViewController).resetNavigationBar()
         }

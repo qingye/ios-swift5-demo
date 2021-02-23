@@ -1,30 +1,28 @@
 //
-//  HomeViewController.swift
+//  GoodsListViewController.swift
 //  JdApp
 //
-//  Created by qingye on 2021/2/19.
+//  Created by qingye on 2021/2/23.
 //
 
 import UIKit
 
-class HomeViewController: BaseViewController {
-    
+class GoodsListViewController: BaseViewController {
     override func viewDidLoad() {
-        hideNavigationBar = true
         super.viewDidLoad()
         self.initView()
+        navigationItem.title = "商品列表"
+        navigationController?.navigationBar.backgroundColor = .orange
     }
-
+    
     func initView() {
+        view.isUserInteractionEnabled = true
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapLabel)))
+        
         let label = UILabel(frame: CGRect.zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "HomeViewController"
+        label.text = "商品列表"
         label.tintColor = .black
-        
-        label.isUserInteractionEnabled = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapLabel))
-        label.addGestureRecognizer(tap)
-        
         self.view.addSubview(label)
         
         NSLayoutConstraint.activate([
@@ -34,6 +32,6 @@ class HomeViewController: BaseViewController {
     }
     
     @objc func tapLabel() {
-        self.navigationController?.pushViewController(GoodsListViewController(), animated: true)
+        self.navigationController?.pushViewController(GoodsDetailViewController(), animated: true)
     }
 }

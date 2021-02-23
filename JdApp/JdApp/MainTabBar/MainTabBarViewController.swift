@@ -24,7 +24,7 @@ class MainTabBarViewController: UITabBarController {
         ]
 
         // 设置 tabBar & tabBarItem
-        self.setTabBarItemAttributes(bgColor: UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 0.75))
+        self.setTabBarItemAttributes(bgColor: UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1))
 
         // 设置汽泡
         for one in self.tabBar.items! {

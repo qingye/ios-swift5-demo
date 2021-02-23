@@ -11,6 +11,8 @@ class GoodsDetailViewController : BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initView()
+        navigationItem.title = "商品详情"
+        navigationController?.navigationBar.backgroundColor = .yellow
     }
     
     func initView() {

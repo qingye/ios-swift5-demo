@@ -20,6 +20,7 @@
 		AF8FD2E825DECB73002B0B19 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FD2E725DECB73002B0B19 /* CategoryViewController.swift */; };
 		AF8FD2EE25DECBFB002B0B19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FD2ED25DECBFB002B0B19 /* BaseViewController.swift */; };
 		AFA1CC4A25E54F1900E80D18 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA1CC4925E54F1900E80D18 /* CustomNavigationController.swift */; };
+		AFA1CC5025E55C7F00E80D18 /* GoodsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA1CC4F25E55C7F00E80D18 /* GoodsListViewController.swift */; };
 		C85C5A1600B00FF35EDA19FE /* Pods_JdApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DA1FCFA9A9B6AEC7D5DE45 /* Pods_JdApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		AF8FD2E725DECB73002B0B19 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		AF8FD2ED25DECBFB002B0B19 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AFA1CC4925E54F1900E80D18 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		AFA1CC4F25E55C7F00E80D18 /* GoodsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				AF511FCA25E01F1400B5F451 /* GoodsDetailViewController.swift */,
+				AFA1CC4F25E55C7F00E80D18 /* GoodsListViewController.swift */,
 			);
 			path = ModuleGoods;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				AF8FD2E525DECB69002B0B19 /* CartViewController.swift in Sources */,
 				AF8FD28825DEC005002B0B19 /* SceneDelegate.swift in Sources */,
 				AF8FD2EE25DECBFB002B0B19 /* BaseViewController.swift in Sources */,
+				AFA1CC5025E55C7F00E80D18 /* GoodsListViewController.swift in Sources */,
 				AF8FD2E225DECB5E002B0B19 /* FoundViewController.swift in Sources */,
 				AF8FD2E825DECB73002B0B19 /* CategoryViewController.swift in Sources */,
 				AF511FCB25E01F1400B5F451 /* GoodsDetailViewController.swift in Sources */,
@@ -430,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN2L657BL7;
 				INFOPLIST_FILE = JdApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN2L657BL7;
 				INFOPLIST_FILE = JdApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
