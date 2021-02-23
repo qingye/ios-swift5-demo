@@ -35,7 +35,7 @@ class MainTabBarViewController: UITabBarController {
     }
     
     func getTabBarItem(_ vc: UIViewController, _ title: String) -> UIViewController {
-        let nav = UINavigationController(rootViewController: vc)
+        let nav = CustomNavigationController(rootViewController: vc)
         nav.tabBarItem.title = title
         return nav
     }

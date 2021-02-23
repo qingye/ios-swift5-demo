@@ -7,12 +7,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
+        hideNavigationBar = true
         super.viewDidLoad()
         self.initView()
-        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     func initView() {

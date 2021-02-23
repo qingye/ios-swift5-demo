@@ -19,6 +19,7 @@
 		AF8FD2E525DECB69002B0B19 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FD2E425DECB69002B0B19 /* CartViewController.swift */; };
 		AF8FD2E825DECB73002B0B19 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FD2E725DECB73002B0B19 /* CategoryViewController.swift */; };
 		AF8FD2EE25DECBFB002B0B19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8FD2ED25DECBFB002B0B19 /* BaseViewController.swift */; };
+		AFA1CC4A25E54F1900E80D18 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA1CC4925E54F1900E80D18 /* CustomNavigationController.swift */; };
 		C85C5A1600B00FF35EDA19FE /* Pods_JdApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02DA1FCFA9A9B6AEC7D5DE45 /* Pods_JdApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		AF8FD2E425DECB69002B0B19 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		AF8FD2E725DECB73002B0B19 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		AF8FD2ED25DECBFB002B0B19 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AFA1CC4925E54F1900E80D18 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,7 @@
 		AF8FD28425DEC005002B0B19 /* JdApp */ = {
 			isa = PBXGroup;
 			children = (
-				AF8FD2EC25DECBDE002B0B19 /* BaseViewController */,
+				AF8FD2EC25DECBDE002B0B19 /* BaseController */,
 				AF8FD2EA25DECB89002B0B19 /* MainTabBar */,
 				AF8FD2D425DECAAD002B0B19 /* Modules */,
 				AF8FD28525DEC005002B0B19 /* AppDelegate.swift */,
@@ -173,12 +175,13 @@
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
-		AF8FD2EC25DECBDE002B0B19 /* BaseViewController */ = {
+		AF8FD2EC25DECBDE002B0B19 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
 				AF8FD2ED25DECBFB002B0B19 /* BaseViewController.swift */,
+				AFA1CC4925E54F1900E80D18 /* CustomNavigationController.swift */,
 			);
-			path = BaseViewController;
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA1CC4A25E54F1900E80D18 /* CustomNavigationController.swift in Sources */,
 				AF8FD2DB25DECB35002B0B19 /* HomeViewController.swift in Sources */,
 				AF8FD2A925DEC598002B0B19 /* MainTabBarViewController.swift in Sources */,
 				AF8FD28625DEC005002B0B19 /* AppDelegate.swift in Sources */,
