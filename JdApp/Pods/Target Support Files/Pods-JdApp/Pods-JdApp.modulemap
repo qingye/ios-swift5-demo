@@ -1,6 +1,0 @@
-framework module Pods_JdApp {
-  umbrella header "Pods-JdApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
