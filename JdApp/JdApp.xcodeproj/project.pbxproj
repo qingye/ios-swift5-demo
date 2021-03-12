@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83516B3C25FB77F00075BCA3 /* AdvertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83516B3B25FB77F00075BCA3 /* AdvertiseViewController.swift */; };
 		83B3383325F8723E00CF92A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3383225F8723E00CF92A5 /* BaseViewController.swift */; };
 		83B3383625F8769200CF92A5 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3383525F8769200CF92A5 /* CustomNavigationController.swift */; };
 		AF8C0AD525F9F52B0070CC2C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C0AD325F9F52B0070CC2C /* UIColor+Extension.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83516B3B25FB77F00075BCA3 /* AdvertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdvertiseViewController.swift; path = JdApp/AdvertiseViewController.swift; sourceTree = SOURCE_ROOT; };
 		83B3383225F8723E00CF92A5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		83B3383525F8769200CF92A5 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		AF8C0AD325F9F52B0070CC2C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				AFFB528F25F2843E00AC950B /* Assets.xcassets */,
 				AFFB529125F2843E00AC950B /* LaunchScreen.storyboard */,
 				AFFB529425F2843E00AC950B /* Info.plist */,
+				83516B3B25FB77F00075BCA3 /* AdvertiseViewController.swift */,
 			);
 			path = JDApp;
 			sourceTree = "<group>";
@@ -171,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFFB527E25F2843D00AC950B /* Build configuration list for PBXProject "JDApp" */;
+			buildConfigurationList = AFFB527E25F2843D00AC950B /* Build configuration list for PBXProject "JdApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,6 +217,7 @@
 				AFFB528725F2843D00AC950B /* AppDelegate.swift in Sources */,
 				83B3383325F8723E00CF92A5 /* BaseViewController.swift in Sources */,
 				83B3383625F8769200CF92A5 /* CustomNavigationController.swift in Sources */,
+				83516B3C25FB77F00075BCA3 /* AdvertiseViewController.swift in Sources */,
 				AFFB52A025F288E900AC950B /* MainTabBarController.swift in Sources */,
 				AFFB52A525F28F8200AC950B /* HomeViewController.swift in Sources */,
 				AFC4A6F925F91217001F574D /* UIImage+Extension.swift in Sources */,
@@ -394,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFFB527E25F2843D00AC950B /* Build configuration list for PBXProject "JDApp" */ = {
+		AFFB527E25F2843D00AC950B /* Build configuration list for PBXProject "JdApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFFB529525F2843E00AC950B /* Debug */,

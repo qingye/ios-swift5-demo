@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = MainTabBarController()
+        window?.rootViewController = AdvertiseViewController()
         window?.makeKeyAndVisible()
         
         return true
