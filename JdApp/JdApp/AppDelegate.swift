@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
-        window?.rootViewController = AdvertiseViewController()
+        window?.rootViewController = AdvertiseViewController() // 修改这里
         window?.makeKeyAndVisible()
         
         return true
