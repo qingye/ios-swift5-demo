@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		83516B3C25FB77F00075BCA3 /* AdvertiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83516B3B25FB77F00075BCA3 /* AdvertiseViewController.swift */; };
+		83AAA12025FF701F009DD113 /* CircleProgressView in Frameworks */ = {isa = PBXBuildFile; productRef = 83AAA11F25FF701F009DD113 /* CircleProgressView */; };
 		83B3383325F8723E00CF92A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3383225F8723E00CF92A5 /* BaseViewController.swift */; };
 		83B3383625F8769200CF92A5 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3383525F8769200CF92A5 /* CustomNavigationController.swift */; };
 		AF8C0AD525F9F52B0070CC2C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C0AD325F9F52B0070CC2C /* UIColor+Extension.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		83516B3B25FB77F00075BCA3 /* AdvertiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdvertiseViewController.swift; path = JdApp/AdvertiseViewController.swift; sourceTree = SOURCE_ROOT; };
+		83AAA11C25FF7018009DD113 /* CircleProgressView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CircleProgressView; path = ../../CircleProgressView; sourceTree = "<group>"; };
 		83B3383225F8723E00CF92A5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		83B3383525F8769200CF92A5 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		AF8C0AD325F9F52B0070CC2C /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -53,12 +55,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AAA12025FF701F009DD113 /* CircleProgressView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83AAA11E25FF701F009DD113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83B3383025F86BA000CF92A5 /* BaseControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 			children = (
 				AFFB528525F2843D00AC950B /* JDApp */,
 				AFFB528425F2843D00AC950B /* Products */,
+				83AAA11E25FF701F009DD113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +116,7 @@
 		AFFB528525F2843D00AC950B /* JDApp */ = {
 			isa = PBXGroup;
 			children = (
+				83AAA11C25FF7018009DD113 /* CircleProgressView */,
 				AF8C0AD825F9F5910070CC2C /* Constants */,
 				AFC4A6F725F911EF001F574D /* Extentions */,
 				83B3383025F86BA000CF92A5 /* BaseControllers */,
@@ -156,6 +168,9 @@
 			dependencies = (
 			);
 			name = JDApp;
+			packageProductDependencies = (
+				83AAA11F25FF701F009DD113 /* CircleProgressView */,
+			);
 			productName = JDApp;
 			productReference = AFFB528325F2843D00AC950B /* JDApp.app */;
 			productType = "com.apple.product-type.application";
@@ -417,6 +432,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83AAA11F25FF701F009DD113 /* CircleProgressView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CircleProgressView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFFB527B25F2843D00AC950B /* Project object */;
 }
