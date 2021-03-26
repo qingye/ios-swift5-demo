@@ -14,8 +14,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/qingye/ios-swift-demo/BannerView.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
-  s.source_files = 'Source/*.swift'
+  s.source_files = 'Source/**/*.swift'
   
   s.dependency 'SDWebImage', '~> 5.0'
 
 end
+

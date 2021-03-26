@@ -17,7 +17,7 @@ let package = Package(
     // 外部依赖
     dependencies: [
         // 依赖 SDWebImage
-        .package(url: "https://gitee.com/mirrors/SDWebImage", from: "5.1.0")
+        .package(name: "SDWebImage", url: "https://gitee.com/mirrors/SDWebImage", from: "5.1.0")
     ],
 
     // 指定源码目录（如果不指定，默认目录名是：Sources/*.*）
