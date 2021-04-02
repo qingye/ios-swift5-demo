@@ -14,7 +14,11 @@ public class BannerView: UIView, BannerDelegate {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
+        isUserInteractionEnabled = true
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))
+        
         banner = BannerPageView(frame: frame, loop: true)
+        // 设置委托为自己
         banner?.bannerDelegate = self
         addSubview(banner!)
         
@@ -33,6 +37,11 @@ public class BannerView: UIView, BannerDelegate {
         adjustIndicator(urls.count)
     }
     
+    // MARK: BannerDelegate
+    public func didPageChange(idx: Int) {
+        indicators?.setCurIdx(idx)
+    }
+    
     func adjustIndicator(_ count: Int) {
         indicators?.addCircleLayer(count)
         NSLayoutConstraint.activate([
@@ -43,7 +52,7 @@ public class BannerView: UIView, BannerDelegate {
         ])
     }
     
-    public func didPageChange(idx: Int) {
-        indicators?.setCurIdx(idx)
+    @objc func handleTap() {
+        print("handleTap ==== \(String(describing: indicators?.curIdx))")
     }
 }

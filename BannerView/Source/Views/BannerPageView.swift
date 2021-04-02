@@ -15,6 +15,7 @@ fileprivate let kBannerViewCell = "BannerViewCell"
 class BannerPageView: UICollectionView, UICollectionViewDelegate, UICollectionViewDataSource {
     fileprivate var urls: [String]?
     fileprivate var loop: Bool = true
+    fileprivate var timer: Timer?
     
     var bannerDelegate: BannerDelegate?
     
@@ -22,6 +23,7 @@ class BannerPageView: UICollectionView, UICollectionViewDelegate, UICollectionVi
         // 原始数据：[a, b, c]
         self.urls = urls
         reData()
+        startTimer()
     }
     
     public func setLoop(_ loop: Bool) {
@@ -46,10 +48,9 @@ class BannerPageView: UICollectionView, UICollectionViewDelegate, UICollectionVi
                          animated: false)
         }
     }
-    
-    // MARK: UICollectionViewDelegate
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+
+    // 如果是循环滚动，要在滚动结束后计算是否需要重新定位
+    func redirectPosition() {
         // 计算 page 下标 = 水平滚动偏移值 / 宽度
         var idx = Int(contentOffset.x / frame.size.width)
         
@@ -70,6 +71,19 @@ class BannerPageView: UICollectionView, UICollectionViewDelegate, UICollectionVi
         }
 
         bannerDelegate?.didPageChange(idx: idx)
+    }
+    
+    // MARK: UICollectionViewDelegate
+    
+    // 当执行 setContentOffset 或者 scrollRectVisible 完成时，且 animated = true 时，该方法会被执行
+    // 注：如果 animated = false 该方法是不会被调用的
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        redirectPosition()
+    }
+    
+    // 用户手指触摸产生的滚动才会调用该方法
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        redirectPosition()
     }
 
     // MARK: UICollectionViewDataSource
@@ -130,5 +144,36 @@ extension BannerPageView {
         showsHorizontalScrollIndicator = false
         // 不允许回弹
         bounces = false
+    }
+}
+
+// 扩展：处理定时器
+extension BannerPageView {
+    func startTimer() {
+        endTimer()
+        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { [weak self] _ in
+            self?.next()
+        })
+    }
+    
+    // 结束定时器
+    func endTimer() {
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func next() {
+        let idx = Int(contentOffset.x / frame.size.width)
+        scrollToItem(at: IndexPath(row: idx + 1, section: 0), at: UICollectionView.ScrollPosition(rawValue: 0), animated: true)
+    }
+
+    // 用户手指触摸停止定时器
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        endTimer()
+    }
+    
+    // 松开后重启定时器
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        startTimer()
     }
 }
